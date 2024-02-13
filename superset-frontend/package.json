@@ -42,7 +42,7 @@
     "build-dev": "cross-env NODE_OPTIONS=--max_old_space_size=8192 NODE_ENV=development webpack --mode=development --color",
     "build-instrumented": "cross-env NODE_ENV=production BABEL_ENV=instrumented webpack --mode=production --color",
     "build-storybook": "build-storybook",
-    "build-translations": "cd .. && ./scripts/po2json.sh",
+    "build-translations": "../scripts/po2json.sh",
     "check-translation": "prettier --check ../superset/translations/**/LC_MESSAGES/*.json",
     "chromatic": "npx chromatic --skip 'dependabot/**'  --only-changed",
     "clean-translation": "prettier --write ../superset/translations/**/LC_MESSAGES/*.json",
